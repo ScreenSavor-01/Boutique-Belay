@@ -1,0 +1,264 @@
+
+:root {
+    --turquoise: #d8f0ed;
+    --dark-turquoise: #356d69;
+    --gold: #d1a04b;
+    --light-gold: #e5d2a8;
+    --cream: #f8fffe;
+    --text: #3f4b48;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    line-height: 1.7;
+
+/* Background ^^ */
+  
+    background-image:
+        linear-gradient(
+            rgba(236, 226, 199, 0.7),
+            rgba(216, 240, 237, 0.76)
+        ),
+        url("spa-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Navigation bar ^^ */
+.navbar {
+    background-color: rgba(230, 221, 198, 0.96);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--light-gold);
+}
+
+.navbar-brand {
+    color: var(--dark-turquoise) !important;
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--text) !important;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+/* Hero section -_- */
+.hero {
+    min-height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 50px 35px;
+    background-color: rgba(255, 253, 248, 0.82);
+    border: 1px solid rgba(184, 148, 85, 0.55);
+    border-radius: 8px;
+}
+
+.welcome,
+.section-label {
+    color: var(--gold);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    color: var(--dark-turquoise);
+    font-family: Georgia, serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin: 20px 0;
+}
+
+.hero-content > p:not(.welcome) {
+    max-width: 580px;
+    margin: 0 auto 25px;
+}
+
+/* Buttons ^^ */
+.gold-button {
+    background-color: var(--gold);
+    color: white;
+    border: 1px solid var(--gold);
+    border-radius: 3px;
+    padding: 12px 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.gold-button:hover {
+    background-color: var(--dark-turquoise);
+    color: white;
+    border-color: var(--dark-turquoise);
+}
+
+/* My Shared section spacing ><*/
+.section-padding {
+    padding: 85px 0;
+}
+
+h2 {
+    color: var(--dark-turquoise);
+    font-family: Georgia, serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin-bottom: 20px;
+}
+
+/*My About section^^ */
+.about-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px;
+    text-align: center;
+    background-color: rgba(255, 253, 248, 0.91);
+    border: 1px solid var(--light-gold);
+    border-radius: 8px;
+}
+
+.about-box p {
+    margin-bottom: 18px;
+}
+
+.signature {
+    color: var(--gold);
+    font-family: Georgia, serif;
+    font-size: 1.35rem;
+    font-style: italic;
+}
+
+/* Services section ^^ */
+.services-section {
+    background-color: rgba(216, 240, 237, 0.90);
+}
+
+.service-card {
+    height: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: var(--cream);
+    border: 1px solid var(--light-gold);
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(53, 109, 105, 0.12);
+}
+
+.service-icon {
+    color: var(--gold);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: var(--dark-turquoise);
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    margin-bottom: 12px;
+}
+
+.service-card .price {
+    color: var(--gold);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Contact section */
+.contact-box {
+    max-width: 750px;
+    margin: auto;
+    padding: 45px 30px;
+    background-color: rgba(255, 253, 248, 0.92);
+    border: 1px solid var(--light-gold);
+    border-radius: 8px;
+}
+
+.contact-box > p:not(.section-label):not(.host-name) {
+    max-width: 550px;
+    margin: 0 auto 25px;
+}
+
+.host-name {
+    color: var(--gold);
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+/* The Footer ^^  */
+footer {
+    padding: 22px 15px;
+    text-align: center;
+    background-color: var(--dark-turquoise);
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* For Mobile screens ^^ */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .hero {
+        min-height: 70vh;
+        padding: 40px 15px;
+    }
+
+    .hero-content {
+        padding: 35px 20px;
+    }
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+    .about-box {
+        padding: 30px 20px;
+    }
+
+    .contact-box {
+        padding: 35px 20px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}
