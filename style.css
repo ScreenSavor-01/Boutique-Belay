@@ -1,9 +1,9 @@
 
 :root {
-    --turquoise: #d8f0ed;
+    --turquoise: #168661;
     --dark-turquoise: #356d69;
     --gold: #d1a04b;
-    --light-gold: #e5d2a8;
+    --light-gold: #bead87;
     --cream: #f8fffe;
     --text: #3f4b48;
 }
@@ -28,8 +28,8 @@ body {
   
     background-image:
         linear-gradient(
-            rgba(236, 226, 199, 0.7),
-            rgba(216, 240, 237, 0.76)
+            rgba(1, 41, 31, 0.7),
+            rgba(170, 141, 12, 0.76)
         ),
         url("spa-background.jpg");
 
